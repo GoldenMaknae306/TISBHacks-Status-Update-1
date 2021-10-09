@@ -1,0 +1,86 @@
+<html>
+	<head>	
+
+	<link rel = "icon" href = "a.jpg" sizes = "16 x 16">
+	<link rel = "stylesheet" href = "mainstyle.css">
+
+	<title> VES Homepage </title>
+	
+	</head>
+
+	<p id = "p1"> </p> 
+	
+	</div>
+
+	<img src = "a.jpg">
+
+	<script>
+
+	function getDate() {
+		var today = new Date();
+		p1.innerHTML = today.toLocaleString();
+	}
+
+	setInterval(getDate, 1000);
+
+	</script>
+
+	<br>
+
+	<h2 id = "specialheading"> Welcome!</h2>
+
+	<script>
+
+	alert("Welcome!");
+	var name = prompt("Your name please: ");
+	var original = document.getElementById("specialheading").innerHTML;
+	var newheading = name + ", " + original;
+	document.getElementById("specialheading").innerHTML = newheading;
+	console.log("Website start.");
+
+	</script>
+
+	<h1> VES - Virtual Education for Students </h1>
+	
+	<h2> Quick Access: </h2>
+	
+	<nav id = "nav1" class = "class1" style = "text-align: center;">
+ 
+	<a href = "index.html"> | Home |</a>
+	<a href = "Mathematics.html"> | Mathematics |</a>
+	<a href = "Physics.html"> | Physics |</a>
+	<a href = "Chemistry.html"> | Chemistry |</a>
+	<a href = "Biology.html"> | Biology |</a>
+	<a href = "Contact.html"> | Contact |</a>
+
+	<script>	
+
+	function resnav() {
+		x = document.getElementById("nav1");
+		if(x.className == "class1") {
+			x.className += "responsive";
+		}
+		else {
+			x.className = "class1";
+		}
+	}
+		
+	</script>	
+
+	</nav>
+	
+	<br>
+ 
+	<hr>
+	
+	<div class = "div1"> 
+
+	<h2 style = "text-align: left"> About VES </h2>
+
+	<p style = "text-align: left"> With the COVID-19 pandemic disrupting education across the globe in early 2020, many educators found themselves rapidly 		transitioning to remote learning without the appropriate knowledge, skills or resources. For many K-12 students, this resulted in less than optimal learning 		experiences. <br> <br>
+
+	To ensure that high quality online learning is being offered in the future, this website was created to help people without easy access to study material 		resources, learn easier. The intention was to determine opportunities for improvement while identifying areas of excellence that could be highlighted against 		an evaluation framework for quality online learning. Therefore, this website can be used to make improvements to an online student's learning experience. </p> 
+	
+	</div>
+
+	<hr>
